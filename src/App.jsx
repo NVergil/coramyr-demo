@@ -1,52 +1,15 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Star, Calendar, ArrowRight, Activity, Stethoscope, HeartPulse } from 'lucide-react';
+import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/socialIcons';
 
-const FacebookIcon = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-  </svg>
-);
+// Mover iconos fuera del componente App.jsx
+// Mover todos los componentes por seccion en diferentes archivos jsx
+// Integrar una imagen real de la doctora
+// Vincular los iconos de redes sociales con sus cuentas reales
+// Vincular botones CTA (Agendar cita) a Calendly/Google Calendar
+// Crear una version en ingles del proyecto
 
-const InstagramIcon = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-  </svg>
-);
 
-const TikTokIcon = ({ className }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-  </svg>
-);
 
 function App() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -57,7 +20,7 @@ function App() {
 
   return (
     <div className="font-sans text-gray-800 bg-slate-50 min-h-screen">
-      
+
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -65,7 +28,7 @@ function App() {
             <div className="w-10 h-10 bg-teal-800 text-white rounded-full flex items-center justify-center font-serif text-xl">
               Dra.
             </div>
-            <span className="font-semibold text-xl tracking-tight text-teal-900">Elena Valdés</span>
+            <span className="font-semibold text-xl tracking-tight text-teal-900">Miriam Cabañas Alvistegui</span>
           </div>
           <button className="hidden md:flex items-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
             <Calendar className="w-4 h-4" />
@@ -86,7 +49,7 @@ function App() {
               Cuidando tu salud con <span className="font-semibold text-teal-800">empatía y excelencia</span>.
             </h1>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              Amplia experiencia en
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="flex items-center justify-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-teal-900/20">
@@ -100,9 +63,9 @@ function App() {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
-              <img 
-                src="/doctor-profile.png" 
-                alt="Dra. Elena Valdés" 
+              <img
+                src="/doctor-profile.png"
+                alt="Dra. Elena Valdés"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -128,7 +91,9 @@ function App() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-light text-gray-900 mb-4">Especialidad y Servicios</h2>
             <p className="text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+              Soy doctora con especialidad en Radiestesia Médica y Radiónica. Me gradué con honores en Light Harmonics Institute (sede en Nuevo México, Estados Unidos) mi maestra fue la doctora Linda Lancaster.
+              <br />
+              La carrera de Medicina la estudié en The Open International University for Complementary Medicines.
             </p>
           </div>
 
@@ -204,7 +169,7 @@ function App() {
               "¿Se realizan consultas en línea (Telemedicina)?"
             ].map((q, i) => (
               <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-200">
-                <button 
+                <button
                   className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                   onClick={() => toggleFaq(i)}
                 >
@@ -236,13 +201,13 @@ function App() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
               </p>
             </div>
-            
+
             <div className="flex flex-col items-center md:items-end gap-6">
               <button className="bg-teal-800 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 Agendar Cita
               </button>
-              
+
               <div className="flex items-center gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-teal-50 hover:text-teal-700 transition-colors">
                   <FacebookIcon className="w-5 h-5" />
@@ -256,7 +221,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center pt-8 border-t border-gray-100 text-sm text-gray-400">
             © {new Date().getFullYear()} Dra. Elena Valdés. Todos los derechos reservados.
           </div>
