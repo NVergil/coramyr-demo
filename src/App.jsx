@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Star, Calendar, ArrowRight, Activity, Stethoscope, HeartPulse } from 'lucide-react';
-import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/socialIcons';
+import { ChevronDown, ChevronUp, Star, Calendar, ArrowRight, Activity, Stethoscope, HeartPulse, Microscope, Leaf } from 'lucide-react';
+import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
+import Header from './components/Header';
+import Testimonials from './components/Testimonials';
 
 // Mover iconos fuera del componente App.jsx
 // Mover todos los componentes por seccion en diferentes archivos jsx
@@ -21,135 +23,9 @@ function App() {
   return (
     <div className="font-sans text-gray-800 bg-slate-50 min-h-screen">
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-teal-800 text-white rounded-full flex items-center justify-center font-serif text-xl">
-              Dra.
-            </div>
-            <span className="font-semibold text-xl tracking-tight text-teal-900">Miriam Cabañas Alvistegui</span>
-          </div>
-          <button className="hidden md:flex items-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
-            <Calendar className="w-4 h-4" />
-            Agendar Cita
-          </button>
-        </div>
-      </header>
+      <Header icons={{ Calendar, ArrowRight, Activity, HeartPulse, Microscope, Leaf }} />
 
-      {/* Hero & About Me */}
-      <section className="relative pt-20 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-800 text-sm font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-teal-600"></span>
-              Atención Médica Integral
-            </div>
-            <h1 className="text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-6">
-              Cuidando tu salud con <span className="font-semibold text-teal-800">empatía y excelencia</span>.
-            </h1>
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-              Amplia experiencia en
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-teal-900/20">
-                Agendar mi primera cita
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <button className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium transition-colors">
-                Conocer más
-              </button>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
-              <img
-                src="/doctor-profile.png"
-                alt="Dra. Elena Valdés"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-3xl shadow-xl max-w-xs hidden md:block">
-              <div className="flex items-center gap-4 mb-3">
-                <div className="bg-teal-100 p-3 rounded-2xl text-teal-800">
-                  <Activity className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 font-medium">Experiencia</p>
-                  <p className="font-bold text-gray-900">+15 Años</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Specialty / Profession */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-light text-gray-900 mb-4">Especialidad y Servicios</h2>
-            <p className="text-gray-600">
-              Soy doctora con especialidad en Radiestesia Médica y Radiónica. Me gradué con honores en Light Harmonics Institute (sede en Nuevo México, Estados Unidos) mi maestra fue la doctora Linda Lancaster.
-              <br />
-              La carrera de Medicina la estudié en The Open International University for Complementary Medicines.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: 'Medicina General', icon: <Stethoscope className="w-8 h-8" /> },
-              { title: 'Chequeos Preventivos', icon: <HeartPulse className="w-8 h-8" /> },
-              { title: 'Control de Enfermedades', icon: <Activity className="w-8 h-8" /> }
-            ].map((item, i) => (
-              <div key={i} className="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-lg transition-shadow">
-                <div className="text-teal-700 mb-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 bg-teal-900 text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-light mb-4">Lo que dicen mis pacientes</h2>
-            <p className="text-teal-100/80 max-w-2xl mx-auto">
-              Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((_, i) => (
-              <div key={i} className="bg-teal-800/50 backdrop-blur border border-teal-700/50 p-8 rounded-3xl">
-                <div className="flex gap-1 mb-6 text-yellow-400">
-                  {[...Array(5)].map((_, j) => <Star key={j} className="w-5 h-5 fill-current" />)}
-                </div>
-                <p className="text-teal-50 mb-8 leading-relaxed font-light italic">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat non, tincidunt est. Sed aliquet congue tortor."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-teal-700 rounded-full flex items-center justify-center font-medium">
-                    {String.fromCharCode(65 + i)}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Paciente Anónimo</h4>
-                    <p className="text-sm text-teal-200">Lorem Ipsum</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimonials icons={{ Star }} />
 
       {/* FAQ */}
       <section className="py-24 bg-slate-50">

@@ -1,0 +1,105 @@
+const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscope, Leaf } }) => {
+    return (
+        <>
+            {/* Header */}
+            < header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100" >
+                <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                        <div className="w-10 h-10 bg-teal-800 text-white rounded-full flex items-center justify-center font-serif text-xl">
+                            Dra.
+                        </div>
+                        <span className="font-semibold text-xl tracking-tight text-teal-900">Miriam Cabañas Alvistegui</span>
+                    </div>
+                    <button className="hidden md:flex items-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
+                        <Calendar className="w-4 h-4" />
+                        Agendar Cita
+                    </button>
+                </div>
+            </header >
+
+            {/* Hero & About Me */}
+            < section className="relative pt-20 pb-24 lg:pt-32 lg:pb-32 overflow-hidden" >
+                <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="max-w-2xl">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-800 text-sm font-medium mb-6">
+                            <span className="w-2 h-2 rounded-full bg-teal-600"></span>
+                            Atención Médica Integral
+                        </div>
+                        <h1 className="text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-6">
+
+                            Más de 20 años dedicados <span className="font-semibold text-teal-800">a la sanación a nivel celular.</span>
+                        </h1>
+                        <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+                            Mi misión es ayudarte a recuperar tu bienestar cuando sientes que has agotado las opciones convencionales. Con más de 22 años de experiencia en medicina alternativa y 16 años como especialista en Radiestesia Médica y Radiónica, me he dedicado a entender el cuerpo humano desde una perspectiva energética y profunda.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <button className="flex items-center justify-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-teal-900/20">
+                                Agendar mi primera cita
+                                <ArrowRight className="w-4 h-4" />
+                            </button>
+                            <button className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium transition-colors">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                    <div className="relative">
+                        <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
+                            <img
+                                src="/doctor-profile.png"
+                                alt="Dra. Elena Valdés"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        {/* Decorative elements */}
+                        <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-3xl shadow-xl max-w-xs hidden md:block">
+                            <div className="flex items-center gap-4 mb-3">
+                                <div className="bg-teal-100 p-3 rounded-2xl text-teal-800">
+                                    <Activity className="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <p className="text-sm text-gray-500 font-medium">Experiencia</p>
+                                    <p className="font-bold text-gray-900">+20 Años</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section >
+
+            {/* Specialty / Profession */}
+            < section className="py-24 bg-white" >
+                <div className="max-w-6xl mx-auto px-6">
+                    <div className="text-center max-w-2xl mx-auto mb-16">
+                        <h2 className="text-3xl font-light text-gray-900 mb-4">Especialidad y Servicios</h2>
+                        <p className="text-gray-600">
+                            Me formé en The Open International University for Complementary Medicines y me gradué
+                            con honores en el Light Harmonics Institute de Nuevo México, bajo la tutela de la reconocida Dra. Linda Lancaster.
+                            Mi enfoque no es solo tratar el síntoma, sino encontrar la causa raíz de tu padecimiento para guiarte hacia una
+                            recuperación real y personalizada.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {[
+                            { title: 'Radiestesia Médica', icon: <Microscope className="w-8 h-8" />, description: 'Detección precisa de desequilibrios energéticos y frecuencias corporales para un diagnóstico profundo.' },
+                            { title: 'Terapias Naturales', icon: <Leaf className="w-8 h-8" />, description: 'Uso experto de Homeopatía y Energía Universal para una recuperación suave y efectiva.' },
+                            { title: 'Control de Enfermedades Crónicas', icon: <HeartPulse className="w-8 h-8" />, description: '' }
+                        ].map((item, i) => (
+                            <div key={i} className="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-lg transition-shadow">
+                                <div className="text-teal-700 mb-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm">
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                                <p className="text-gray-600 leading-relaxed text-sm">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section >
+        </>
+    )
+}
+
+export default Header
