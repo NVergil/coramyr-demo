@@ -1,6 +1,8 @@
 import testimonialsData from '../data/testimonials.json'
+import useEmblaCarousel from 'embla-carousel-react'
 
 const Testimonials = ({ icons: { Star } }) => {
+    const [emblaRef] = useEmblaCarousel({ loop: true })
     return (
         <section className="py-24 bg-teal-900 text-white">
             <div className="max-w-6xl mx-auto px-6">
