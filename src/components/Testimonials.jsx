@@ -1,6 +1,4 @@
-import testimonialsData from '../data/testimonials.json'
-
-import EmblaCarousel from './Carrousel/EmblaCarousel';
+import EmblaCarousel from './carrousel/EmblaCarousel';
 
 
 const OPTIONS = {}
