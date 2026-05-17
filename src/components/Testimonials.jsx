@@ -1,8 +1,13 @@
 import testimonialsData from '../data/testimonials.json'
-import useEmblaCarousel from 'embla-carousel-react'
+
+import EmblaCarousel from './Carrousel/EmblaCarousel';
+
+
+const OPTIONS = {}
+const SLIDE_COUNT = 16
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const Testimonials = ({ icons: { Star } }) => {
-    const [emblaRef] = useEmblaCarousel({ loop: true })
     return (
         <section className="py-24 bg-teal-900 text-white">
             <div className="max-w-6xl mx-auto px-6">
@@ -13,7 +18,10 @@ const Testimonials = ({ icons: { Star } }) => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+
+
+                {/* <div className="grid md:grid-cols-3 gap-8">
                     {testimonialsData.map((testimonial, i) => (
                         <div key={testimonial.id} className="bg-teal-800/50 backdrop-blur border border-teal-700/50 p-8 rounded-3xl">
                             <div className="flex items-center gap-4">
@@ -33,7 +41,7 @@ const Testimonials = ({ icons: { Star } }) => {
                             </p>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     )

@@ -3,6 +3,8 @@ import { ChevronDown, ChevronUp, Star, Calendar, ArrowRight, Activity, Stethosco
 import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
 import Header from './components/Header';
 import Testimonials from './components/Testimonials';
+import "./embla.css";
+import "./base.css";
 
 // Mover iconos fuera del componente App.jsx
 // Mover todos los componentes por seccion en diferentes archivos jsx
@@ -10,8 +12,6 @@ import Testimonials from './components/Testimonials';
 // Vincular los iconos de redes sociales con sus cuentas reales
 // Vincular botones CTA (Agendar cita) a Calendly/Google Calendar
 // Crear una version en ingles del proyecto
-
-
 
 function App() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -26,6 +26,7 @@ function App() {
       <Header icons={{ Calendar, ArrowRight, Activity, HeartPulse, Microscope, Leaf }} />
 
       <Testimonials icons={{ Star }} />
+
 
       {/* FAQ */}
       <section className="py-24 bg-slate-50">

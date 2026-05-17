@@ -1,26 +1,82 @@
 [
   {
     "id": 1,
-    "name": "Estela Hernández",
-    "initial": "E",
+    "name": "Rosario Mendizabal",
+    "initial": "R",
     "role": "Paciente",
     "rating": 5,
-    "content": "Hace cuatro meses vine al consultorio de la doctora Miriam Cabañas, solía tener estreñimiento, colitis, várices (insuficiencia venosa crónica). Tenía también una verruga en mi dedo, la cual después de un largo tratamiento seguía del mismo tamaño y no había mejoría. Después del tratamiento con la doctora vi cambios, la verruga se seco y desapareció. Ya no tengo inflamación, ni colitis, ni estreñimiento. En cuanto a las varices hubo bastante mejoría. Aún sigo en tratamiento. Yo les recomiendo visitarla para tratar cualquier enfermedad crónica que vean que no hay mejoría con los médicos convencionales."
+    "content": "Hoy quiero agradecer infinitamente a la Dra. Miriam, después de mucho peregrinar con mi problema de dolores extremos en el cuerpo (...) me recomendaron los tratamientos de la Dra. Miriam y sinceramente, no creí que me fueran a funcionar (...) doy gracias a la persona que me recomendó esta alternativa, ha sido y será para mí, la mejor experiencia de mejorar mi salud…"
   },
   {
     "id": 2,
+    "name": "Neftali",
+    "initial": "N",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "(...) me enorgullece altamente recomendarla por su profesionalismo y buen trabajo en el área de la salud (...) ningún tratamiento me servía y el dolor era insoportable e incrementaba gradualmente. (...) en cada consulta (...) se los juro, la mejor terapia de mi vida, me hizo abrir los ojos y entender el porqué de algunas enfermedades que padecí y el cómo tratarlas."
+  },
+  {
+    "id": 3,
     "name": "Josefina Hernandez",
     "initial": "J",
     "role": "Paciente",
     "rating": 5,
-    "content": "Hacé 14 meses perdí a mi hija de cáncer, ella estuvo en tratamiento con 25 radiaciones, 8 quimioterapias y cirugía en seno. A pesar de todo este tratamiento el cáncer invadió su cuerpo. Un año después de la perdida de mi primer hija, diagnostican con cáncer a mi segunda hija. Mi esposo y yo decidimos seguir otra alternativa para el tratamiento de mi segunda hija. Acudimos con la doctora Miriam Cabañas y después de cuatro meses de tratamiento en el hospital la raza me dijeron que había disminuido el tamaño de los tumores y por lo tanto ya no era necesario hacer tratamientos tal agresivos. Con el tratamiento de la Dra Miriam hemos visto resultados, inclusive la dureza de ambos senos se ha ido eliminando. Me siento agradecida por encontrar a la doctora y no tener que repetir la misma experiencia que mi primera hija."
+    "content": "Mi esposo y yo decidimos seguir otra alternativa (...) Acudimos con la doctora Miriam Cabañas y después de cuatro meses de tratamiento en el hospital la raza me dijeron que había disminuido el tamaño de los tumores. (...) Con el tratamiento de la Dra Miriam hemos visto resultados (...) Me siento agradecida por encontrar a la doctora."
   },
   {
-    "id": 3,
-    "name": "Lourdes Guzman",
+    "id": 4,
+    "name": "Lourdes Guzmán",
     "initial": "L",
     "role": "Paciente",
     "rating": 5,
-    "content": "Visité el consultorio de la Dra. Miriam Cabañas el pasado septiembre de 2024, yo venía muy desanimada pensando que mis problemas de salud ya no tenían remedio. Tenía problemas en mi corazón, riñones, reumatismo, falta de memoria, colesterol y triglicéridos altos, hipotiroidismo y otros padecimientos que resultaron en el estudio que ella me hizo. Quiero decirles que después de haber tomado el tratamiento con la doctora, me siento muy bien. Todos mis problemas y achaques han desaparecido. También mi presión arterial ya está estable, ya que solía tener picos de hasta 190 cada cuatro días. Tuve dos pre infartos y solía caminar en zig zag. También recupere mi memoria y ya no tengo dolor en articulaciones, ni cuando hace frío. Continuamos dando seguimiento al hipotiroidismo pero, en general y según los últimos estudios mi tiroides está trabajando mucho mejor. Muchas gracias Dra. Miriam Cabañas."
+    "content": "(...) yo venía muy desanimada pensando que mis problemas de salud ya no tenían remedio. Quiero decirles que después de haber tomado el tratamiento con la doctora, me siento muy bien. Todos mis problemas y achaques han desaparecido. También mi presión arterial ya está estable (...). Tuve dos pre infartos y solía caminar en zig zag."
+  },
+  {
+    "id": 5,
+    "name": "Maria Elena Trejo",
+    "initial": "M",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "(...) justo cuando sufrí un percance que me hizo perder la conciencia (...) ella me ayudó a descubrir lo que me estaba provocando una disfunción a nivel neurológico, tomé tratamiento con ella y ahora puedo decir que tengo salud y estoy completamente bien (...)."
+  },
+  {
+    "id": 6,
+    "name": "Alicia Cortes",
+    "initial": "A",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Doy gracias a dios por poner a la doctora Miriam en mi camino. (...) Es una terapia alternativa muy eficaz. La doctora es muy amable y siempre está al pendiente de la mejoría de sus pacientes (...) ¡Muy recomendable..!"
+  },
+  {
+    "id": 7,
+    "name": "Cecy Soto",
+    "initial": "C",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Hola soy paciente de la Dra.Miriam, yo llegué con ella mal! (...) ya había tomado otro tratamiento con otra doctora y no tuvo resultado, tengo 3 meses con ella (...) y todo volvió a la normalidad 👍…"
+  },
+  {
+    "id": 8,
+    "name": "Irma Perez Martinez",
+    "initial": "I",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Soy paciente de la Dra Miriam Cabañas yo me estoy tratando con ella xq tengo osteopenia y hipotiroidismo yo me sentía mal desde que me empezó a dar tratamientos me he sentido bien."
+  },
+  {
+    "id": 9,
+    "name": "Alejandra Z.",
+    "initial": "A",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Me he ido a atender con la Dra. Cabañas y he recibido buen trato y magníficos resultados. Yo tuve problemas con mis riñones y con el tratamiento indicado he sanado (...)."
+  },
+  {
+    "id": 10,
+    "name": "Jacqueline Pereda",
+    "initial": "J",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Estoy muy contenta con los resultados que tuve después de asistir con la DOCTORA MIRIAM me ayudó bastante, con problemas de ansiedad, depresión. La recomiendo"
   }
 ]
