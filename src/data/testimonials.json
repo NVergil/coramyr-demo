@@ -49,19 +49,19 @@
   },
   {
     "id": 7,
-    "name": "Cecy Soto",
-    "initial": "C",
-    "role": "Paciente",
-    "rating": 5,
-    "content": "Hola soy paciente de la Dra.Miriam, yo llegué con ella mal! (...) ya había tomado otro tratamiento con otra doctora y no tuvo resultado, tengo 3 meses con ella (...) y todo volvió a la normalidad 👍…"
-  },
-  {
-    "id": 8,
     "name": "Irma Perez Martinez",
     "initial": "I",
     "role": "Paciente",
     "rating": 5,
     "content": "Soy paciente de la Dra Miriam Cabañas yo me estoy tratando con ella xq tengo osteopenia y hipotiroidismo yo me sentía mal desde que me empezó a dar tratamientos me he sentido bien."
+  },
+  {
+    "id": 8,
+    "name": "Cecy Soto",
+    "initial": "C",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Hola soy paciente de la Dra.Miriam, yo llegué con ella mal! (...) ya había tomado otro tratamiento con otra doctora y no tuvo resultado, tengo 3 meses con ella (...) y todo volvió a la normalidad 👍…"
   },
   {
     "id": 9,

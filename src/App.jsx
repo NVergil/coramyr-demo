@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Star, Calendar, ArrowRight, Activity, Stethoscope, HeartPulse, Microscope, Leaf } from 'lucide-react';
+import { ChevronDown, ChevronUp, Calendar, ArrowRight, Activity, Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
 import Header from './components/Header';
 import Testimonials from './components/Testimonials';
+import Speciality from './components/Speciality';
 import "./embla.css";
 import "./base.css";
 
@@ -23,9 +24,11 @@ function App() {
   return (
     <div className="font-sans text-gray-800 bg-slate-50 min-h-screen">
 
-      <Header icons={{ Calendar, ArrowRight, Activity, HeartPulse, Microscope, Leaf }} />
+      <Header icons={{ Calendar, ArrowRight, Activity, Microscope, Leaf }} />
 
-      <Testimonials icons={{ Star }} />
+      <Speciality icons={{ Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding }} />
+
+      <Testimonials />
 
 
       {/* FAQ */}

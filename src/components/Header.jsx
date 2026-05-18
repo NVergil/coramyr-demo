@@ -43,7 +43,7 @@ const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscop
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
+                        <div className="aspect-4/5 rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
                             <img
                                 src="/doctor-profile.png"
                                 alt="Dra. Elena Valdés"
@@ -66,38 +66,7 @@ const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscop
                 </div>
             </section >
 
-            {/* Specialty / Profession */}
-            < section className="py-24 bg-white" >
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h2 className="text-3xl font-light text-gray-900 mb-4">Especialidad y Servicios</h2>
-                        <p className="text-gray-600">
-                            Me formé en The Open International University for Complementary Medicines y me gradué
-                            con honores en el Light Harmonics Institute de Nuevo México, bajo la tutela de la reconocida Dra. Linda Lancaster.
-                            Mi enfoque no es solo tratar el síntoma, sino encontrar la causa raíz de tu padecimiento para guiarte hacia una
-                            recuperación real y personalizada.
-                        </p>
-                    </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {[
-                            { title: 'Radiestesia Médica', icon: <Microscope className="w-8 h-8" />, description: 'Detección precisa de desequilibrios energéticos y frecuencias corporales para un diagnóstico profundo.' },
-                            { title: 'Terapias Naturales', icon: <Leaf className="w-8 h-8" />, description: 'Uso experto de Homeopatía y Energía Universal para una recuperación suave y efectiva.' },
-                            { title: 'Control de Enfermedades Crónicas', icon: <HeartPulse className="w-8 h-8" />, description: '' }
-                        ].map((item, i) => (
-                            <div key={i} className="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-lg transition-shadow">
-                                <div className="text-teal-700 mb-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm">
-                                    {item.icon}
-                                </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-                                <p className="text-gray-600 leading-relaxed text-sm">
-                                    {item.description}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section >
         </>
     )
 }

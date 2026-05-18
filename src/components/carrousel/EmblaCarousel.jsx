@@ -12,9 +12,8 @@ import {
   useSelectedSnapDisplay
 } from './EmblaCarouselSelectedSnapDisplay'
 
-const EmblaCarousel = (props) => {
-  const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+const EmblaCarousel = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel()
 
   const {
     prevBtnDisabled,

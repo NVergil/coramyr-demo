@@ -1,11 +1,6 @@
 import EmblaCarousel from './carrousel/EmblaCarousel';
 
-
-const OPTIONS = {}
-const SLIDE_COUNT = 16
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
-
-const Testimonials = ({ icons: { Star } }) => {
+const Testimonials = () => {
     return (
         <section className="py-24 bg-teal-900 text-white">
             <div className="max-w-6xl mx-auto px-6">
@@ -16,7 +11,7 @@ const Testimonials = ({ icons: { Star } }) => {
                     </p>
                 </div>
 
-                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+                <EmblaCarousel />
 
 
                 {/* <div className="grid md:grid-cols-3 gap-8">
