@@ -4,6 +4,7 @@ import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIco
 import Header from './components/Header';
 import Testimonials from './components/Testimonials';
 import Speciality from './components/Speciality';
+import Methodology from './components/Methodology';
 import "./embla.css";
 import "./base.css";
 
@@ -14,12 +15,16 @@ import "./base.css";
 // Vincular botones CTA (Agendar cita) a Calendly/Google Calendar
 // Crear una version en ingles del proyecto
 
+
 function App() {
   const [openFaq, setOpenFaq] = useState(null);
+
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
+
+  const Doctor = { name: "Dra. Miriam Cabañas Alvistegui" }
 
   return (
     <div className="font-sans text-gray-800 bg-slate-50 min-h-screen">
@@ -27,6 +32,8 @@ function App() {
       <Header icons={{ Calendar, ArrowRight, Activity, Microscope, Leaf }} />
 
       <Speciality icons={{ Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding }} />
+
+      <Methodology />
 
       <Testimonials />
 
@@ -76,17 +83,19 @@ function App() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
             <div className="text-center md:text-left">
-              <h3 className="font-serif text-2xl text-teal-900 mb-2">Dra. Elena Valdés</h3>
+              <h3 className="font-serif text-2xl text-teal-900 mb-2">{Doctor.name}</h3>
               <p className="text-gray-500 max-w-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
               </p>
             </div>
 
             <div className="flex flex-col items-center md:items-end gap-6">
-              <button className="bg-teal-800 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                Agendar Cita
-              </button>
+              <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
+                <button className="cursor-pointer bg-teal-800 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  Agendar Cita
+                </button>
+              </a>
 
               <div className="flex items-center gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-teal-50 hover:text-teal-700 transition-colors">
@@ -103,7 +112,7 @@ function App() {
           </div>
 
           <div className="text-center pt-8 border-t border-gray-100 text-sm text-gray-400">
-            © {new Date().getFullYear()} Dra. Elena Valdés. Todos los derechos reservados.
+            © {new Date().getFullYear()} {Doctor.name}. Todos los derechos reservados.
           </div>
         </div>
       </footer>

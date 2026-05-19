@@ -10,10 +10,12 @@ const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscop
                         </div>
                         <span className="font-semibold text-xl tracking-tight text-teal-900">Miriam Cabañas Alvistegui</span>
                     </div>
-                    <button className="hidden md:flex items-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
-                        <Calendar className="w-4 h-4" />
-                        Agendar Cita
-                    </button>
+                    <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
+                        <button className="cursor-pointer hidden md:flex items-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
+                            <Calendar className="w-4 h-4" />
+                            Agendar Cita
+                        </button>
+                    </a>
                 </div>
             </header >
 
@@ -33,13 +35,18 @@ const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscop
                             Mi misión es ayudarte a recuperar tu bienestar cuando sientes que has agotado las opciones convencionales. Con más de 22 años de experiencia en medicina alternativa y 16 años como especialista en Radiestesia Médica y Radiónica, me he dedicado a entender el cuerpo humano desde una perspectiva energética y profunda.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="flex items-center justify-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-teal-900/20">
-                                Agendar mi primera cita
-                                <ArrowRight className="w-4 h-4" />
-                            </button>
-                            <button className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium transition-colors">
-                                Conocer más
-                            </button>
+                            <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
+                                <button className="cursor-pointer flex items-center justify-center gap-2 bg-teal-800 hover:bg-teal-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-teal-900/20">
+                                    Agendar mi primera cita
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                            </a>
+                            <a href="#speciality">
+                                <button className="cursor-pointer flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium transition-colors">
+
+                                    Conocer más
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="relative">
