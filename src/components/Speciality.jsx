@@ -23,7 +23,7 @@ const Speciality = ({ icons: { Microscope, Leaf, Atom, HeartPulse, Brain, Dna, P
                             { title: 'Sanación Cuántica', icon: <Atom className="w-8 h-8" />, description: 'Terapias a distancia y Radiónica que armonizan el campo vital, superando las barreras del espacio' }
                         ].map((item, i) => (
                             <div key={i} className="bg-slate-100 border border-slate-100 p-8 rounded-3xl hover:shadow-lg transition-shadow">
-                                <div className="text-teal-700 mb-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm">
+                                <div className="text-sky-700 mb-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm">
                                     {item.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
@@ -59,7 +59,7 @@ const Speciality = ({ icons: { Microscope, Leaf, Atom, HeartPulse, Brain, Dna, P
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-6 mb-6">
-                                <div className="text-teal-700 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm shrink-0">
+                                <div className="text-sky-700 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm shrink-0">
                                     {item.icon}
                                 </div>
                                 <p className="text-gray-600">
