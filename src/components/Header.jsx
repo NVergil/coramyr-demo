@@ -1,4 +1,4 @@
-const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscope, Leaf } }) => {
+const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
     return (
         <>
             {/* Header */}
@@ -8,7 +8,7 @@ const Header = ({ icons: { Calendar, ArrowRight, Activity, HeartPulse, Microscop
                         <div className="w-10 h-10 bg-sky-800 text-white rounded-full flex items-center justify-center font-serif text-xl">
                             Dra.
                         </div>
-                        <span className="font-semibold text-xl tracking-tight text-sky-900">Miriam Cabañas Alvistegui</span>
+                        <span className="font-semibold text-xl tracking-tight text-sky-900">{doctor.name}</span>
                     </div>
                     <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
                         <button className="cursor-pointer hidden md:flex items-center gap-2 bg-sky-800 hover:bg-sky-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">

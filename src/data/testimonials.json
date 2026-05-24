@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Rosario Mendizabal",
-    "initial": "R",
+    "name": "Erika Madrigal",
+    "initial": "E",
     "role": "Paciente",
     "rating": 5,
-    "content": "Hoy quiero agradecer infinitamente a la Dra. Miriam, después de mucho peregrinar con mi problema de dolores extremos en el cuerpo (...) me recomendaron los tratamientos de la Dra. Miriam y sinceramente, no creí que me fueran a funcionar (...) doy gracias a la persona que me recomendó esta alternativa, ha sido y será para mí, la mejor experiencia de mejorar mi salud…"
+    "content": "hace casi dos años me diagnosticaron con artritis reumatoide (...) realmente los dolores eran insoportables (...) a eso le añado que tuve hemorragia por unos problemas de miomas uterinos, y la anemia estaba muy severa (...) hoy después de tres meses de tratamiento con ella doy fe que es completamente funcional, me ha ayudado muchísimo al grado de vivir nuevamente sin dolor (...) Dra. Miriam infinitas gracias por ayudarme a mejorar mi vida tanto física como emocionalmente, Dios la bendiga siempre"
   },
   {
     "id": 2,
@@ -17,6 +17,22 @@
   },
   {
     "id": 3,
+    "name": "Rosario Mendizabal",
+    "initial": "R",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Hoy quiero agradecer infinitamente a la Dra. Miriam, después de mucho peregrinar con mi problema de dolores extremos en el cuerpo (...) me recomendaron los tratamientos de la Dra. Miriam y sinceramente, no creí que me fueran a funcionar (...) doy gracias a la persona que me recomendó esta alternativa, ha sido y será para mí, la mejor experiencia de mejorar mi salud…"
+  },
+  {
+    "id": 4,
+    "name": "Andy Romero",
+    "initial": "A",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Mis hijas empezaron con una fuerte tos y gripe por consiguiente fui con su dra de cabecera y así nos pasamos casi 4 meses con medicamentos y se componían un rato y volvían a recaer hasta que decidí acercarme con la dra Miryam (...)  es una gran dra y tiene una mejor alternativa que el medicamento que a la larga hace daño, la recomiendo mucho no se arrepentirá."
+  },
+  {
+    "id": 5,
     "name": "Josefina Hernandez",
     "initial": "J",
     "role": "Paciente",
@@ -24,7 +40,7 @@
     "content": "Mi esposo y yo decidimos seguir otra alternativa (...) Acudimos con la doctora Miriam Cabañas y después de cuatro meses de tratamiento en el hospital la raza me dijeron que había disminuido el tamaño de los tumores. (...) Con el tratamiento de la Dra Miriam hemos visto resultados (...) Me siento agradecida por encontrar a la doctora."
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Lourdes Guzmán",
     "initial": "L",
     "role": "Paciente",
@@ -32,7 +48,31 @@
     "content": "(...) yo venía muy desanimada pensando que mis problemas de salud ya no tenían remedio. Quiero decirles que después de haber tomado el tratamiento con la doctora, me siento muy bien. Todos mis problemas y achaques han desaparecido. También mi presión arterial ya está estable (...). Tuve dos pre infartos y solía caminar en zig zag."
   },
   {
-    "id": 5,
+    "id": 7,
+    "name": "Jair Gonzalez",
+    "initial": "J",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Es un tratamiento alternativo, realizado por la Dra. Miriam, (...) me ayudó bastante en mi padecimiento (Tumor en el cerebro) ya que padecía de dolores constantes en la cabeza de gran intensidad, y demás síntomas, los cuales ya desaparecieron por completo, solo queda darle las Gracias de corazón."
+  },
+  {
+    "id": 8,
+    "name": "Viridiana Villanueva",
+    "initial": "V",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Realmente es un tratamiento alternativo altamente recomendable, de mano de la Dra. Miriam que todo el tiempo está al pendiente del progreso (...) Si ya no quieren seguir tomando medicamentos y quieren llegar a tratar los padecimientos que tienen desde la raíz entonces este es el lugar correcto. 😊"
+  },
+  {
+    "id": 9,
+    "name": "Luis Cruz",
+    "initial": "L",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Tenía problemas de ansiedad y depresión. Ataques de pánico, desrealización, disociación (...) Acudí con la Dr. Miriam y con su tratamiento puedo decir que ahora estoy bien, realmente bien, sin volver a tener miedo a sufrir síntomas de estas enfermedades mentales. De verdad gracias."
+  },
+  {
+    "id": 10,
     "name": "Maria Elena Trejo",
     "initial": "M",
     "role": "Paciente",
@@ -40,7 +80,23 @@
     "content": "(...) justo cuando sufrí un percance que me hizo perder la conciencia (...) ella me ayudó a descubrir lo que me estaba provocando una disfunción a nivel neurológico, tomé tratamiento con ella y ahora puedo decir que tengo salud y estoy completamente bien (...)."
   },
   {
-    "id": 6,
+    "id": 11,
+    "name": "Myriam Patricia Robles",
+    "initial": "M",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "(...) Yo visité a varios médicos y no lograba curarme de una inflamación y molestia cada vez que comía, después de varias semanas y no me aliviaba, fui a ver a la Dra. Cabañas y ella encontró un parásito en Intestino y el medicamento que recetó me alivio."
+  },
+  {
+    "id": 12,
+    "name": "Susana Salgado",
+    "initial": "S",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "(...) Tengo muchos padecimientos crónicos y su tratamiento me ha ayudado a estar más estable (...) y estoy teniendo mejor calidad de vida recomiendo al 100% su medicina alternativa ya que es natural y sobretodo emocional."
+  },
+  {
+    "id": 13,
     "name": "Alicia Cortes",
     "initial": "A",
     "role": "Paciente",
@@ -48,15 +104,15 @@
     "content": "Doy gracias a dios por poner a la doctora Miriam en mi camino. (...) Es una terapia alternativa muy eficaz. La doctora es muy amable y siempre está al pendiente de la mejoría de sus pacientes (...) ¡Muy recomendable..!"
   },
   {
-    "id": 7,
-    "name": "Irma Perez Martinez",
-    "initial": "I",
+    "id": 14,
+    "name": "Hector Manuel Bautista Escalante",
+    "initial": "H",
     "role": "Paciente",
     "rating": 5,
-    "content": "Soy paciente de la Dra Miriam Cabañas yo me estoy tratando con ella xq tengo osteopenia y hipotiroidismo yo me sentía mal, desde que me empezó a dar tratamientos me he sentido bien."
+    "content": "yo acudí al consultorio de la Dra. Miriam con problemas de gastritis, colitis, colesterol y varices y con sus tratamientos ya no tengo los malestares que tenía, (...) no duden en consultar a la doctora Miriam."
   },
   {
-    "id": 8,
+    "id": 15,
     "name": "Cecy Soto",
     "initial": "C",
     "role": "Paciente",
@@ -64,7 +120,31 @@
     "content": "Hola soy paciente de la Dra.Miriam, yo llegué con ella mal! (...) ya había tomado otro tratamiento con otra doctora y no tuvo resultado, tengo 3 meses con ella (...) y todo volvió a la normalidad 👍…"
   },
   {
-    "id": 9,
+    "id": 16,
+    "name": "Danyro Gonzalez",
+    "initial": "D",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Gracias a la doctora Miriam, que me ayudó con mi padecimiento de ansiedad, depresión, gastritis y sinusitis. También gracias a las terapias que me dió hoy me siento mucho mejor. Muy recomendable."
+  },
+  {
+    "id": 17,
+    "name": "Irma Perez Martinez",
+    "initial": "I",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Soy paciente de la Dra Miriam Cabañas yo me estoy tratando con ella xq tengo osteopenia y hipotiroidismo yo me sentía mal, desde que me empezó a dar tratamientos me he sentido bien."
+  },
+  {
+    "id": 18,
+    "name": "Angélica González",
+    "initial": "A",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Muy agradecida siempre con la Dra. Miriam Cabañas, me ayudó a tratar mi ansiedad y depresión, gracias a dios al día de hoy me encuentro muy bien. La recomiendo ampliamente."
+  },
+  {
+    "id": 19,
     "name": "Alejandra Z.",
     "initial": "A",
     "role": "Paciente",
@@ -72,11 +152,19 @@
     "content": "Me he ido a atender con la Dra. Cabañas y he recibido buen trato y magníficos resultados. Yo tuve problemas con mis riñones y con el tratamiento indicado he sanado (...)."
   },
   {
-    "id": 10,
+    "id": 20,
     "name": "Jacqueline Pereda",
     "initial": "J",
     "role": "Paciente",
     "rating": 5,
     "content": "Estoy muy contenta con los resultados que tuve después de asistir con la DOCTORA MIRIAM me ayudó bastante, con problemas de ansiedad, depresión. La recomiendo"
+  },
+  {
+    "id": 21,
+    "name": "Hugo Gabriel Rivas",
+    "initial": "H",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Tuvimos la fortuna de coincidir con la Doctora Miriam. Nos ha ayudado mucho en la salud y emociones. Gracias Dra por todo!!"
   }
 ]
