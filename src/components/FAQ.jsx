@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import faqsData from '../data/faqs.json';
 
 const FAQ = ({ icons: { HelpCircle, ChevronUp, ChevronDown } }) => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -18,28 +19,7 @@ const FAQ = ({ icons: { HelpCircle, ChevronUp, ChevronDown } }) => {
         </div>
 
         <div className="space-y-4">
-          {[
-            {
-              q: "¿Cuál es el costo de la consulta?",
-              a: "$20 dólares americanos o $350 pesos mexicanos."
-            },
-            {
-              q: "¿Qué método de pago aceptan?",
-              a: "Efectivo, Paypal, Western Union o transferencia a cuenta en BBVA."
-            },
-            {
-              q: "¿Qué es la Radiestesia Médica?",
-              a: "Una ciencia que nos ayuda a determinar la causa raíz de la enfermedad del paciente."
-            },
-            {
-              q: "¿Qué es un análisis de Radiestesia Médica?",
-              a: "Método en el cual, con la muestra de sangre del paciente se realiza un estudio minucioso de la energía electromagnética de las células del mismo."
-            },
-            {
-              q: "¿En qué consiste el tratamiento?",
-              a: "Después de tener los resultados del análisis, se procede a realizar una limpieza, desintoxicación, desparasitación y sanación cuántica a distancia. Así como se le proporciona al paciente homeopatía, flores de Bach, Factor de transferencia o células madre (según las necesidades del paciente) y se da seguimiento cada 15 días para verificar síntomas y en casos crónicos se da apoyo emocional al paciente."
-            }
-          ].map((faq, i) => (
+          {faqsData.map((faq, i) => (
             <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-200">
               <button
                 className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none group"

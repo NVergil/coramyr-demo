@@ -1,0 +1,43 @@
+{
+  "sectionTitle": "Especialidad y Servicios",
+  "sectionDescription": "Estudié en The Open International University for Complementary Medicines y me gradué con honores en el Light Harmonics Institute de Nuevo México, bajo la tutela de la reconocida Dra. Linda Lancaster. Mi enfoque no es solo tratar el síntoma, sino encontrar la causa raíz de tu padecimiento para guiarte hacia una recuperación real y personalizada.",
+  "mainServices": [
+    {
+      "title": "Radiestesia Médica",
+      "icon": "Microscope",
+      "description": "Ciencia que nos permite medir la energía electromagnética de la célula por medio de una muestra de sangre."
+    },
+    {
+      "title": "Terapias Naturales",
+      "icon": "Leaf",
+      "description": "Uso experto de Homeopatía, Flores de Bach, Factor de Transferencia y células madre."
+    },
+    {
+      "title": "Sanación Cuántica",
+      "icon": "Atom",
+      "description": "Terapias a distancia y Radiónica que armonizan el campo vital, superando las barreras del espacio"
+    }
+  ],
+  "asideServices": [
+    {
+      "title": "Tratamiento Oncológico:",
+      "icon": "Dna",
+      "description": "Cáncer de vejiga, útero, colón, pulmón, linfoma, glándulas mamarias, estómago."
+    },
+    {
+      "title": "Apoyo Neurológico:",
+      "icon": "Brain",
+      "description": "Artistis reumatoide, Parkinson, Fibromialgia, Alzheimer."
+    },
+    {
+      "title": "Salud Cardiovascular:",
+      "icon": "HeartPulse",
+      "description": "Arteriosclerosis, Arritmia, Hipertensión, prevención de trombosis y várices."
+    },
+    {
+      "title": "Apoyo Emocional:",
+      "icon": "PersonStanding",
+      "description": "Terapia de sanación energética y emocional, tratamiento para Ansiedad, y Depresión profunda."
+    }
+  ]
+}

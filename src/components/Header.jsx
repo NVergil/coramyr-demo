@@ -6,11 +6,11 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                 <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <div className="w-10 h-10 bg-sky-800 text-white rounded-full flex items-center justify-center font-serif text-xl">
-                            Dra.
+                            {doctor.title}
                         </div>
                         <span className="font-semibold text-xl tracking-tight text-sky-900">{doctor.name}</span>
                     </div>
-                    <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
+                    <a href={doctor.whatsappUrl} target="_blank" rel="noopener noreferrer">
                         <button className="cursor-pointer hidden md:flex items-center gap-2 bg-sky-800 hover:bg-sky-700 text-white px-6 py-2.5 rounded-full font-medium transition-colors">
                             <Calendar className="w-4 h-4" />
                             Agendar Cita
@@ -25,17 +25,20 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                     <div className="max-w-2xl">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 text-sky-800 text-sm font-medium mb-6">
                             <span className="w-2 h-2 rounded-full bg-sky-600"></span>
-                            Atención Médica Integral
+                            CORAMYR | Consultorio en Radiestesia Médica y Radiónica
                         </div>
                         <h1 className="text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-6">
 
                             Más de 20 años dedicados <span className="font-semibold text-sky-800">a la sanación a nivel celular.</span>
                         </h1>
                         <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-                            Mi misión es ayudarte a recuperar tu bienestar cuando sientes que has agotado las opciones convencionales. Con más de 22 años de experiencia en medicina alternativa y 16 años como especialista en Radiestesia Médica y Radiónica, me he dedicado a entender el cuerpo humano desde una perspectiva energética y profunda.
+                            Mi compromiso es ayudarte a recuperar tu salud, cuando ya has visitado diferentes especialistas y no hay mejoría en tu padecimiento.
+                            <br />
+                            Tengo más de 22 años de experiencia en sanación del campo cuántico y 17 años de experiencia con especialidad en Radiestesia Médica y Radiónica.
+                            Te ofrezco un tratamiento médico integral y personalizado.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="https://wa.me/5622151939" target="_blank" rel="noopener noreferrer">
+                            <a href={doctor.whatsappUrl} target="_blank" rel="noopener noreferrer">
                                 <button className="cursor-pointer flex items-center justify-center gap-2 bg-sky-800 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-medium transition-colors shadow-lg shadow-sky-900/20">
                                     Agendar mi primera cita
                                     <ArrowRight className="w-4 h-4" />
@@ -53,7 +56,7 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                         <div className="aspect-4/5 rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
                             <img
                                 src="/doctor-profile.png"
-                                alt="Dra. Elena Valdés"
+                                alt={`Foto de la ${doctor.name}`}
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -65,7 +68,7 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 font-medium">Experiencia</p>
-                                    <p className="font-bold text-gray-900">+20 Años</p>
+                                    <p className="font-bold text-gray-900">+{doctor.experience} Años</p>
                                 </div>
                             </div>
                         </div>

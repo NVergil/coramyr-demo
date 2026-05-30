@@ -1,29 +1,7 @@
 import React from 'react';
+import methodologyData from '../data/methodology.json';
 
 const Methodology = () => {
-    const steps = [
-        {
-            phase: 'Diagnóstico Inicial',
-            action: 'Estudio minucioso de la causa raíz energética.',
-            tool: 'Radiestesia Médica'
-        },
-        {
-            phase: 'Intervención',
-            action: 'Limpieza y desintoxicación. Sanación cuántica y equilibrio energético.',
-            tool: 'Radiónica / Par Biomagnético'
-        },
-        {
-            phase: 'Soporte Químico Natural',
-            action: 'Tratamiento de síntomas físicos y biológicos.',
-            tool: 'Homeopatía / Flores de Bach, Células madre / Factor de transferencia'
-        },
-        {
-            phase: 'Seguimiento',
-            action: 'Ajuste dinámico según evolución del paciente.',
-            tool: 'Consulta Personalizada (presencial o videollamada)'
-        }
-    ];
-
     return (
         <section className="py-24 bg-slate-50" id="methodology">
             <div className="max-w-6xl mx-auto px-6">
@@ -44,7 +22,7 @@ const Methodology = () => {
 
                     {/* Rows */}
                     <div className="divide-y divide-slate-100">
-                        {steps.map((step, index) => (
+                        {methodologyData.map((step, index) => (
                             <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 p-6 hover:bg-slate-50/50 transition-colors">
                                 {/* Mobile label + content */}
                                 <div className="col-span-1 md:col-span-3 flex items-center">
