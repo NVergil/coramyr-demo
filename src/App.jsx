@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, ChevronUp, Calendar, ArrowRight, Activity, Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding, HelpCircle } from 'lucide-react';
+import { ChevronDown, ChevronUp, Calendar, ArrowRight, Activity, Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding, HelpCircle, DnaOff } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
 import { DOCTOR_CONFIG, SOCIAL_LINKS } from './data/constants';
 import Header from './components/Header';
@@ -17,7 +17,7 @@ function App() {
 
       <Header doctor={DOCTOR_CONFIG} icons={{ Calendar, ArrowRight, Activity }} />
 
-      <Speciality icons={{ Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding }} />
+      <Speciality icons={{ Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding, DnaOff }} />
 
       <Methodology />
 

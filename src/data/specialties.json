@@ -27,12 +27,17 @@
     {
       "title": "Apoyo Neurológico:",
       "icon": "Brain",
-      "description": "Artistis reumatoide, Parkinson, Fibromialgia, Alzheimer."
+      "description": "Parkinson, Fibromialgia, Alzheimer."
     },
     {
       "title": "Salud Cardiovascular:",
       "icon": "HeartPulse",
       "description": "Arteriosclerosis, Arritmia, Hipertensión, prevención de trombosis y várices."
+    },
+    {
+      "title": "Enfermerdades Autoinmunes:",
+      "icon": "DnaOff",
+      "description": "Artistis reumatoide."
     },
     {
       "title": "Apoyo Emocional:",
