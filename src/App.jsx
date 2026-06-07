@@ -8,12 +8,15 @@ import Speciality from './components/Speciality';
 import Methodology from './components/Methodology';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import StructuredData from './components/StructuredData';
 import "./embla.css";
 import "./base.css";
 
 function App() {
   return (
     <div className="font-sans text-gray-800 bg-slate-50 min-h-screen">
+
+      <StructuredData />
 
       <Header doctor={DOCTOR_CONFIG} icons={{ Calendar, ArrowRight, Activity }} />
 

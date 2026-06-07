@@ -1,0 +1,20 @@
+{
+  "name": "CORAMYR · Radiestesia Médica",
+  "short_name": "CORAMYR",
+  "description": "Consultorio de la Dra. Miriam Cabañas Alvistegui. Radiestesia Médica, Radiónica y Sanación Cuántica.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#075985",
+  "background_color": "#f8fafc",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

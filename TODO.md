@@ -24,6 +24,8 @@
 - [ ] Agregar analytics (Google Analytics o similar)
 - [ ] Optimizar imágenes para web
 - [ ] Implementar SEO meta tags
+- [ ] Arreglar el numero de wsp agregando el codigo de pais, de la siguiente manera https://wa.me/525622151939 
+ 
 
 ## Notas
 
