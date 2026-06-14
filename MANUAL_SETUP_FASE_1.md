@@ -29,6 +29,8 @@
    - `NODE_VERSION` = `20`
 4. **Save**.
 
+> **⚠️ Importante:** si Cloudflare detectó tu proyecto como **Workers (Assets)** en vez de **Pages**, el SPA fallback lo maneja internamente `wrangler.jsonc` con `"not_found_handling": "single-page-application"`. En ese caso **NO usar `public/_redirects`** — entra en loop infinito y rompe el deploy. Ya está corregido en `feature/cf-deploy-fix`.
+
 ### 1.2 Conectar dominio custom (cuando lo tengas)
 
 1. **Workers & Pages** → tu proyecto → **Custom domains** → **Set up a custom domain**.
