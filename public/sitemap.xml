@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://coramyr.mx/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://coramyr.mx/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://coramyr.mx/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://coramyr.mx/" />
+    <image:image>
+      <image:loc>https://coramyr.mx/doctor-profile.png</image:loc>
+      <image:title>Dra. Miriam Cabañas Alvistegui</image:title>
+      <image:caption>Especialista en Radiestesia Médica y Sanación Cuántica</image:caption>
+    </image:image>
+  </url>
+</urlset>
