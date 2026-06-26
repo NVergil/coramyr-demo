@@ -54,11 +54,28 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                     </div>
                     <div className="relative">
                         <div className="aspect-4/5 rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
-                            <img
-                                src="/doctor-profile.png"
-                                alt={`Foto de la ${doctor.name}`}
-                                className="w-full h-full object-cover"
-                            />
+                            <picture>
+                                <source
+                                    type="image/avif"
+                                    srcSet="/doctor/doctor-480.avif 480w, /doctor/doctor-768.avif 768w, /doctor/doctor-1200.avif 1200w"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                />
+                                <source
+                                    type="image/webp"
+                                    srcSet="/doctor/doctor-480.webp 480w, /doctor/doctor-768.webp 768w, /doctor/doctor-1200.webp 1200w"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                />
+                                <img
+                                    src="/doctor-profile.png"
+                                    alt={`Foto de la ${doctor.name}`}
+                                    width="1024"
+                                    height="1280"
+                                    loading="eager"
+                                    fetchPriority="high"
+                                    decoding="async"
+                                    className="w-full h-full object-cover"
+                                />
+                            </picture>
                         </div>
                         {/* Decorative elements */}
                         <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-3xl shadow-xl max-w-xs hidden md:block">
