@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { ChevronDown, ChevronUp, Calendar, ArrowRight, Activity, Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding, HelpCircle, DnaOff } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
 import { DOCTOR_CONFIG, SOCIAL_LINKS } from './data/constants';
 import Header from './components/Header';
-import Testimonials from './components/Testimonials';
 import Speciality from './components/Speciality';
 import Methodology from './components/Methodology';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import StructuredData from './components/StructuredData';
 import "./embla.css";
 import "./base.css";
+
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const FAQ = lazy(() => import('./components/FAQ'));
+
+const SectionFallback = () => (
+  <div className="py-24 flex items-center justify-center" aria-hidden="true">
+    <div className="w-8 h-8 border-2 border-sky-200 border-t-sky-700 rounded-full animate-spin" />
+  </div>
+);
 
 function App() {
   return (
@@ -24,9 +31,13 @@ function App() {
 
       <Methodology />
 
-      <Testimonials />
+      <Suspense fallback={<SectionFallback />}>
+        <Testimonials />
+      </Suspense>
 
-      <FAQ icons={{ HelpCircle, ChevronUp, ChevronDown }} />
+      <Suspense fallback={<SectionFallback />}>
+        <FAQ icons={{ HelpCircle, ChevronUp, ChevronDown }} />
+      </Suspense>
 
       <Footer doctor={DOCTOR_CONFIG} icons={{ Calendar }} socials={{ FacebookIcon, InstagramIcon, TikTokIcon }} socialLinks={SOCIAL_LINKS} />
 

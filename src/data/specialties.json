@@ -15,34 +15,34 @@
     {
       "title": "Sanación Cuántica",
       "icon": "Atom",
-      "description": "Terapias a distancia y Radiónica que armonizan el campo vital, superando las barreras del espacio"
+      "description": "Terapias a distancia y Radiónica que armonizan el campo vital, superando las barreras del espacio."
     }
   ],
   "asideServices": [
     {
       "title": "Tratamiento Oncológico:",
       "icon": "Dna",
-      "description": "Cáncer de vejiga, útero, colón, pulmón, linfoma, glándulas mamarias, estómago."
+      "description": "Cáncer en glándulas mamarias, útero, vejiga, colón, estómago, duodeno, hígado, vesícula, próstata, sistema linfatico, sistema óseo, cerebro."
     },
     {
       "title": "Apoyo Neurológico:",
       "icon": "Brain",
-      "description": "Parkinson, Fibromialgia, Alzheimer."
+      "description": "Parkinson, alzheimer, esclerosis, encefalitis, fibromialgia."
     },
     {
       "title": "Salud Cardiovascular:",
       "icon": "HeartPulse",
-      "description": "Arteriosclerosis, Arritmia, Hipertensión, prevención de trombosis y várices."
+      "description": "Arteriosclerosis, arritmia, hipertensión, prevención de trombosis y várices."
     },
     {
-      "title": "Enfermerdades Autoinmunes:",
+      "title": "Enfermedades Autoinmunes:",
       "icon": "DnaOff",
-      "description": "Artistis reumatoide."
+      "description": "Artritis reumatoide, diabetes, tiroides de Hashimoto, síndrome de Guillain-Barré."
     },
     {
       "title": "Apoyo Emocional:",
       "icon": "PersonStanding",
-      "description": "Terapia de sanación energética y emocional, tratamiento para Ansiedad, y Depresión profunda."
+      "description": "Terapia de sanación energética y emocional, tratamiento para ansiedad, y depresión profunda."
     }
   ]
 }
