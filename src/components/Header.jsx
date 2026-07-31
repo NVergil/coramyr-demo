@@ -53,7 +53,7 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="aspect-4/5 rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
+                        <div className="aspect-[2/3] rounded-[2.5rem] overflow-hidden bg-gray-200 relative shadow-2xl">
                             <picture>
                                 <source
                                     type="image/avif"
@@ -69,11 +69,11 @@ const Header = ({ doctor, icons: { Calendar, ArrowRight, Activity } }) => {
                                     src="/doctor-profile.png"
                                     alt={`Foto de la ${doctor.name}`}
                                     width="1024"
-                                    height="1280"
+                                    height="1535"
                                     loading="eager"
                                     fetchPriority="high"
                                     decoding="async"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-center"
                                 />
                             </picture>
                         </div>
