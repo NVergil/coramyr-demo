@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/dr.miriam_cabanas_alvistegui/",
   tiktok: "https://vm.tiktok.com/ZS9YbQkWGP3b8-XOGU6/",
   facebook: "https://www.facebook.com/coramyr/",
-  youtube: "",
+  youtube: "https://youtube.com/@coramyr-radiestesiamedicay3924",
 };
 
 export const CONSULTATION_PRICE = {
