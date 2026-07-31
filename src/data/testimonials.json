@@ -1,5 +1,13 @@
 [
   {
+    "id": 0,
+    "name": "Areli MC",
+    "initial": "A",
+    "role": "Paciente",
+    "rating": 5,
+    "content": "Mi madre fue diagnosticada con cáncer terminal, huesos de cristal, anemia severa, reumatismo, úlcera estomacal, ansiedad y sus riñones ya no funcionaban bien. (...) le decían que no volvería a caminar y dependía de varios medicamentos fuertes (...) Conocimos a la Dra. Miriam Cabañas (...) Gracias a Dios y a ella ahora mi mamá está libre de cáncer, volvió a caminar, vive sin dolor, sin ansiedad (...) Gracias."
+  },
+  {
     "id": 1,
     "name": "Erika Madrigal",
     "initial": "E",
