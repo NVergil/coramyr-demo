@@ -11,9 +11,10 @@ export const DOCTOR_CONFIG = {
 };
 
 export const SOCIAL_LINKS = {
-  facebook: "https://www.facebook.com/coramyr/",
   instagram: "https://www.instagram.com/dr.miriam_cabanas_alvistegui/",
   tiktok: "https://vm.tiktok.com/ZS9YbQkWGP3b8-XOGU6/",
+  facebook: "https://www.facebook.com/coramyr/",
+  youtube: "",
 };
 
 export const CONSULTATION_PRICE = {
