@@ -1,4 +1,4 @@
-const Footer = ({ doctor, icons: { Calendar }, socials: { FacebookIcon, InstagramIcon, TikTokIcon }, socialLinks }) => {
+const Footer = ({ doctor, icons: { Calendar }, socials: { InstagramIcon, TikTokIcon, FacebookIcon, YouTubeIcon }, socialLinks }) => {
   return (
     <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
       <div className="max-w-6xl mx-auto px-6">
@@ -19,14 +19,17 @@ const Footer = ({ doctor, icons: { Calendar }, socials: { FacebookIcon, Instagra
             </a>
 
             <div className="flex items-center gap-4">
-              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
-                <FacebookIcon className="w-5 h-5" />
-              </a>
-              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
+              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
                 <InstagramIcon className="w-5 h-5" />
               </a>
-              <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
+              <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
                 <TikTokIcon className="w-5 h-5" />
+              </a>
+              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
+                <FacebookIcon className="w-5 h-5" />
+              </a>
+              <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-gray-500 hover:bg-sky-50 hover:text-sky-700 transition-colors cursor-pointer">
+                <YouTubeIcon className="w-5 h-5" />
               </a>
             </div>
           </div>

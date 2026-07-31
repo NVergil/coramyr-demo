@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { ChevronDown, ChevronUp, Calendar, ArrowRight, Activity, Microscope, Leaf, Atom, HeartPulse, Brain, Dna, PersonStanding, HelpCircle, DnaOff } from 'lucide-react';
-import { FacebookIcon, InstagramIcon, TikTokIcon } from './components/SocialsIcons';
+import { FacebookIcon, InstagramIcon, TikTokIcon, YouTubeIcon } from './components/SocialsIcons';
 import { DOCTOR_CONFIG, SOCIAL_LINKS } from './data/constants';
 import Header from './components/Header';
 import Speciality from './components/Speciality';
@@ -39,7 +39,7 @@ function App() {
         <FAQ icons={{ HelpCircle, ChevronUp, ChevronDown }} />
       </Suspense>
 
-      <Footer doctor={DOCTOR_CONFIG} icons={{ Calendar }} socials={{ FacebookIcon, InstagramIcon, TikTokIcon }} socialLinks={SOCIAL_LINKS} />
+      <Footer doctor={DOCTOR_CONFIG} icons={{ Calendar }} socials={{ InstagramIcon, TikTokIcon, FacebookIcon, YouTubeIcon }} socialLinks={SOCIAL_LINKS} />
 
     </div>
   );
