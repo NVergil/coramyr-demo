@@ -265,53 +265,50 @@ npm run dev
 
 | Fecha | Descripción |
 |-------|-------------|
-| 2026-05-29 | Creación del branch feature/refactoring |
+| 2026-05-29 | Creación del branch `feature/refactoring` |
 | 2026-05-29 | Implementación completa del plan de refactorización |
+| 2026-06-14 | Merge a `main`. Inicio Fase 1 SEO. |
+| 2026-06-25 | Fix deploy Cloudflare Pages (SPA fallback). |
+| 2026-08-21 | Documentación consolidada en [`docs/`](./docs/) y [`TODO.md`](./TODO.md). |
 
 ---
 
-## Estado de la Implementación
+## Fases Posteriores (Documentación Separada)
 
-### Fase 1: Correcciones Urgentes
-- [x] 1.1 Corregir alt de imagen en Header.jsx
-- [x] 1.2 Eliminar comentario inválido en Speciality.jsx
+Este documento cubre la **refactorización base**. Para fases posteriores ver:
 
-### Fase 2: Extracción de Datos
-- [x] 2.1 Crear `src/data/constants.js`
-- [x] 2.2 Crear `src/data/faqs.json`
-- [x] 2.3 Crear `src/data/specialties.json`
-- [x] 2.4 Crear `src/data/methodology.json`
+- **Fase 1 — SEO Técnico** → [`docs/seo/PHASE_1_SETUP.md`](./docs/seo/PHASE_1_SETUP.md) (manual operativo, ya ejecutado)
+- **Fase 2 — Performance, Accesibilidad, i18n** → [`docs/seo/PHASE_2_NEXT.md`](./docs/seo/PHASE_2_NEXT.md) (pendiente)
 
-### Fase 3: Refactorización de Componentes
-- [x] 3.1 Refactorizar FAQ.jsx
-- [x] 3.2 Refactorizar Speciality.jsx
-- [x] 3.3 Refactorizar Methodology.jsx
-- [x] 3.4 Refactorizar App.jsx
-- [x] 3.5 Refactorizar Header.jsx
-- [x] 3.6 Refactorizar Footer.jsx
-
-### Fase 4: Limpieza
-- [x] 4.1 Crear TODO.md
-- [ ] 4.2 Limpiar base.css (cancelado)
+Las tareas nuevas y el backlog vivo están centralizados en [`TODO.md`](./TODO.md).
 
 ---
 
-## Notas para Merge
+## Estado Final (Snapshot 2026-05-29)
 
-### ESLint Warnings (No bloqueantes)
-Los siguientes warnings existen pero no afectan la funcionalidad:
-- `no-unused-vars` en componentes que reciben icons por props (patrón establecido)
-- `react-refresh/only-export-components` en archivos de carrusel (lógica de hooks separada)
-- `react-hooks/set-state-in-effect` en callbacks de Embla Carousel (comportamiento esperado)
+### Refactorización
+- ✅ Fases 1-4 completadas (ver checklist arriba, líneas 103-128)
 
 ### Builds Verificados
 - ✅ `npm run build` pasa exitosamente
 - ✅ `npm run dev` inicia correctamente
+- ✅ `npm run lint` sin errores bloqueantes
 
-### Para Hacer Merge
-```bash
-git add .
-git commit -m "refactor: externalize data and fix bugs"
-git checkout main
-git merge feature/refactoring
-```
+### ESLint Warnings Conocidos (No bloqueantes)
+- `no-unused-vars` en componentes que reciben icons por props (patrón establecido)
+- `react-refresh/only-export-components` en archivos de carrusel (lógica de hooks separada)
+- `react-hooks/set-state-in-effect` en callbacks de Embla Carousel (comportamiento esperado)
+
+---
+
+## Historial Completo
+
+| Fecha | Branch | Descripción |
+|-------|--------|-------------|
+| 2026-05-29 | `feature/refactoring` | Implementación completa del plan de refactorización (mergeado) |
+| 2026-06-14 | `feature/seo-fase-1` | SEO técnico: Schema.org, sitemap, robots.txt, headers (mergeado) |
+| 2026-06-25 | `feature/cf-deploy-fix` | Fix SPA fallback en Cloudflare Pages (mergeado) |
+
+---
+
+*Este documento se mantiene como **historial**. Para trabajo activo consultar [`TODO.md`](./TODO.md) y la carpeta [`docs/`](./docs/).*

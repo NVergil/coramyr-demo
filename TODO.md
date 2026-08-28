@@ -1,33 +1,69 @@
 # TODO - coramyr-demo
 
-## Tareas Completadas
+Última actualización: 2026-08-21
 
-- [x] Mover iconos fuera del componente App.jsx
-- [x] Mover todos los componentes por sección en diferentes archivos jsx
-- [x] Vincular los iconos de redes sociales con sus cuentas reales
-- [x] Vincular botones CTA (Agendar cita) a WhatsApp
-- [x] Corregir nombre de doctora en alt de imagen (antes: "Elena Valdés")
+---
+
+## En Progreso
+
+### SEO Fase 2 (Performance, Accesibilidad, i18n)
+Ver [`docs/seo/PHASE_2_NEXT.md`](./docs/seo/PHASE_2_NEXT.md) para detalle.
+
+- [ ] Optimizar `doctor-profile.png` (621 KB → WebP/AVIF + srcset)
+- [ ] Code splitting con `React.lazy` (al menos en Testimonials)
+- [ ] Implementar `tel:+525622151939` además del CTA WhatsApp
+- [ ] Sticky WhatsApp button flotante en mobile
+- [ ] Crear cuenta Google Business Profile
+- [ ] Auditar accesibilidad WCAG 2.1 AA (contraste, focus, navegación por teclado)
+- [ ] Reemplazar `og-image.svg` por `og-image.png` definitivo
+- [ ] Lighthouse Mobile: Performance > 90
+
+---
+
+## Pendientes — Producto
+
+- [ ] Implementar tema dark mode (variables ya reservadas en `base.css`)
+- [ ] Implementar formulario de contacto (además de WhatsApp)
+- [ ] Optimizar SVGs del directorio `assets/`
+
+---
+
+## Pendientes — Infraestructura
+
+- [ ] Agregar `CHANGELOG.md` centralizado
+- [ ] Configurar `markdownlint` en CI
+- [ ] Crear `.github/PULL_REQUEST_TEMPLATE.md`
+- [ ] Definir convención de commits (Conventional Commits)
+
+---
+
+## Completados Recientes
+
+### Refactorización de código (2026-05-29)
+- [x] Mover iconos fuera de `App.jsx`
+- [x] Modularizar componentes por sección
 - [x] Externalizar datos hardcodeados a archivos JSON
-- [x] Crear constants.js para configuración global
-- [x] Corregir comentario JSX inválido en Speciality.jsx
-- [x] Usar doctor.whatsappUrl en Header.jsx
-- [x] Usar doctor.experience dinámico en Header.jsx
-- [x] Mover tareas pendientes de App.jsx a TODO.md
+- [x] Crear `constants.js` como fuente única de verdad
+- [x] Corregir `alt` de imagen y comentario JSX inválido
+- [x] Mover tareas de `App.jsx` a este archivo
 
-## Tareas Pendientes
+### SEO Fase 1 (2026-06-14)
+- [x] Schema.org JSON-LD (`StructuredData.jsx`)
+- [x] Meta tags Open Graph + Twitter Cards en `index.html`
+- [x] `sitemap.xml` y `robots.txt`
+- [x] Headers de seguridad en `public/_headers`
+- [x] Web manifest (`site.webmanifest`)
+- [x] Arreglar WhatsApp con código de país (`+52 56 2215 1939`)
 
-- [ ] Integrar una imagen real de la doctora (reemplazar placeholder)
-- [ ] Crear una versión en inglés del proyecto
-- [ ] Implementar tema dark mode
-- [ ] Agregar animaciones de entrada (fade-in, slide-up)
-- [ ] Implementar formulario de contacto
-- [ ] Agregar analytics (Google Analytics o similar)
-- [ ] Optimizar imágenes para web
-- [ ] Implementar SEO meta tags
-- [ ] Arreglar el numero de wsp agregando el codigo de pais, de la siguiente manera https://wa.me/525622151939 
- 
+### Producto (2026-08-21)
+- [x] Integrar imagen real de la doctora (reemplazo del placeholder)
+
+---
 
 ## Notas
 
-- El número de WhatsApp actual es: 5622151939
-- Las redes sociales están configuradas en `src/data/constants.js`
+- **Fuente única de verdad:** cualquier cambio de datos va en [`src/data/constants.js`](./src/data/constants.js)
+- **Deploy:** automático en Cloudflare Pages al pushear a `main`
+- **Manual SEO operativo:** [`docs/seo/PHASE_1_SETUP.md`](./docs/seo/PHASE_1_SETUP.md)
+- **Animaciones:** descartadas — la mayoría de pacientes son gente mayor y se prioriza una experiencia sin movimientos innecesarios
+- **i18n (inglés):** descartado por ahora — queda como feature futura si el mercado USA crece
