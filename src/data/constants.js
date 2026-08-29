@@ -7,7 +7,7 @@ export const DOCTOR_CONFIG = {
   phoneDisplay: "+52 55 4905 8687",
   whatsappUrl:
     "https://wa.me/525549058687?text=Hola%20Dra.%20Miriam%2C%20me%20interesa%20agendar%20una%20consulta.%20%C2%BFMe%20podr%C3%ADa%20dar%20m%C3%A1s%20informaci%C3%B3n%3F",
-  email: "contacto@coramyr.mx",
+  email: "contacto@dramiriamcabanas.com",
 };
 
 export const SOCIAL_LINKS = {
@@ -26,9 +26,9 @@ export const CONSULTATION_PRICE = {
 export const APP_CONFIG = {
   title: "CORAMYR · Radiestesia Médica",
   siteName: "CORAMYR",
-  domain: "https://coramyr.mx",
+  domain: "https://dramiriamcabanas.com",
   lang: "es-MX",
   description:
     "Consultorio de la Dra. Miriam Cabañas Alvistegui. Radiestesia Médica, Radiónica y Sanación Cuántica. +22 años de experiencia.",
-  ogImage: "https://coramyr.mx/og-image.svg",
+  ogImage: "https://dramiriamcabanas.com/og-image.svg",
 };

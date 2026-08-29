@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /dist/
 
-Sitemap: https://coramyr.mx/sitemap.xml
+Sitemap: https://dramiriamcabanas.com/sitemap.xml

@@ -2,7 +2,7 @@
 
 Sitio web profesional para la **Dra. Miriam Cabañas Alvistegui**, especialista en medicina alternativa, radiestesia médica y sanación cuántica con +22 años de experiencia.
 
-🌐 **Demo en vivo:** [coramyr.mx](https://coramyr.mx) · [coramyr.pages.dev](https://coramyr.pages.dev)
+🌐 **Demo en vivo:** [dramiriamcabanas.com](https://dramiriamcabanas.com) · [coramyr-demo.pages.dev](https://coramyr-demo.pages.dev)
 
 ---
 
